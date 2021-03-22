@@ -10,4 +10,5 @@ description = "A high performance Solidity language Lexer"
 logos = { version = "0.7.7", default-features = false, features = ["nul_term_source", "export_derive"] }
 
 [features]
+default = ["std"]
 std = ["logos/std"]

@@ -15,7 +15,7 @@ pub fn read_pragma<'source, S: logos::Source<'source>>(lex: &mut Lexer<S>) -> S:
 
     loop {
         match lex.read() {
-            0x01...0x20 => lex.bump(),
+            0x01..=0x20 => lex.bump(),
             _           => break,
         }
     }
